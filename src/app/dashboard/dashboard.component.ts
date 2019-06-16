@@ -8,7 +8,7 @@ import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 })
 export class DashboardComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'employee_name', 'employee_salary', 'employee_age', 'profile_image'];
+  displayedColumns: string[] = ['postId','id','name', 'email','body'];
   dataSource;
   myCustomValue:boolean = true;
   constructor(private api: ApiService , private spinnerService: Ng4LoadingSpinnerService) { }

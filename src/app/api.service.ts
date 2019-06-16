@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseURI = "http://dummy.restapiexample.com/api/v1/employees";
+const baseURI = "https://jsonplaceholder.typicode.com/comments";
 const httpOptions = {
   headers: new HttpHeaders({ "Content-Type": "application/json" })
 };
