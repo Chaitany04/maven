@@ -8,12 +8,16 @@
       </mat-card-header>
       <mat-card-content>
         <div class="example-container">
-          <mat-form-field>
-            <input matInput placeholder="Username">
-          </mat-form-field><br>
-          <mat-form-field>
-            <input matInput placeholder="Password">
-          </mat-form-field>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+          </form>
         </div>
       </mat-card-content>
       <mat-card-actions>

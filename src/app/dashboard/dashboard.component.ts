@@ -22,7 +22,6 @@ export class DashboardComponent implements OnInit {
     context.spinnerService.show();
     this.api.getRecord().subscribe(
       function (success) {
-        debugger
         context.dataSource = success
         context.spinnerService.show();
       }

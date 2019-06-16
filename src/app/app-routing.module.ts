@@ -31,7 +31,9 @@ const routes: Routes = [
         component: SignupFormComponent
       }
     ]
-  }
+  },
+  { path: "**", redirectTo:"/info/home" },
+
 ];
 
 @NgModule({

@@ -1,23 +1,29 @@
 Welcome to dashboard<br>
 <button mat-button color="primary" (click)="getRecords()">getRecords</button>
 <ng4-loading-spinner> </ng4-loading-spinner>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" >
   
     <!-- Position Column -->
     <ng-container matColumnDef="postId">
       <th mat-header-cell *matHeaderCellDef> postId </th>
+      <th mat-header-cell >  </th>
+
       <td mat-cell *matCellDef="let element"> {{element.postId}} </td>
     </ng-container>
   
     <!-- Name Column -->
-    <ng-container matColumnDef="employee_age">
+    <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> id </th>
+      <th mat-header-cell >  </th>
+
       <td mat-cell *matCellDef="let element"> {{element.id}} </td>
     </ng-container>
   
     <!-- Weight Column -->
-    <ng-container matColumnDef="employee_name">
+    <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> name </th>
+      <th mat-header-cell >  </th>
+
       <td mat-cell *matCellDef="let element"> {{element.name}} </td>
     </ng-container>
   
